@@ -89,7 +89,7 @@ export default function Contact() {
             <p className="text-center text-red-500">{feedback}</p>
           )}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-200">
               Name
             </label>
             <input
@@ -98,12 +98,12 @@ export default function Contact() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-black mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               required
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-200">
               Email
             </label>
             <input
@@ -112,12 +112,12 @@ export default function Contact() {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-black mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               required
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="message" className="block text-sm font-medium text-gray-200">
               Message
             </label>
             <textarea
@@ -126,7 +126,7 @@ export default function Contact() {
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black"
+              className="text-black mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black"
               required
             ></textarea>
           </div>
@@ -143,7 +143,8 @@ export default function Contact() {
       <footer className="w-full bg-gray-800 text-white py-4 mt-8">
         <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
           <div className="flex items-center mb-4 md:mb-0">
-            <Image src="/logo.png" alt="Small Logo" width={48} height={48} className="mr-4" />
+            {/* Use Next.js Image component for optimized image loading */}
+          <Image src="/logo.png" alt="Small Logo" width={56} height={56} />
             <div className="flex flex-col items-center">
               <span className="text-lg font-semibold">Your Company</span>
               <span className="text-sm">&copy; 2024 All Rights Reserved</span>

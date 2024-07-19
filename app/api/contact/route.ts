@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
   try {
     const client = await clientPromise;
-    const db = client.db("your-database-name"); // Change this to your actual database name
+    const db = client.db("bootcamp24q2"); // Update with your actual database name
 
     const { name, email, message } = await request.json();
 
