@@ -2,6 +2,7 @@
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image"; // Import Image component from next/image
 
 export default function About() {
   const { status } = useSession();
@@ -42,7 +43,7 @@ export default function About() {
           <div className="flex flex-col items-center">
             <span className="text-xl font-semibold">Accessible Learning Platform</span>
             <span className="text-sm">
-              Inclusive Learning: Bringing the World of Knowledge Within Everyone's Reach
+              Inclusive Learning: Bringing the World of Knowledge Within Everyone&apos;s Reach
             </span>
           </div>
           <div className="flex items-center">{showSession()}</div>
@@ -60,7 +61,8 @@ export default function About() {
       <footer className="w-full bg-gray-800 text-white py-4 mt-8">
       <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
         <div className="flex items-center mb-4 md:mb-0">
-          <img src="/logo.png" alt="Small Logo" className="w-14 h-14 mr-4" />
+          {/* Use Next.js Image component for optimized image loading */}
+          <Image src="/logo.png" alt="Small Logo" width={56} height={56} />
           <div className="flex flex-col items-center">
             <span className="text-lg font-semibold">Your Company</span>
             <span className="text-sm">&copy; 2024 All Rights Reserved</span>
@@ -76,3 +78,4 @@ export default function About() {
     </div>
   );
 }
+

@@ -1,49 +1,19 @@
-// app/api/contact/route.ts
-import { NextRequest, NextResponse } from 'next/server';
-import { MongoClient } from 'mongodb';
+import { clientPromise } from '@/utils/mongodb';
+import { NextResponse } from 'next/server';
 
-const uri = process.env.MONGODB_URI;
-const dbName = process.env.MONGODB_DB;
-
-if (!uri) {
-  throw new Error('Please add your Mongo URI to .env.local');
-}
-
-if (!dbName) {
-  throw new Error('Please add your Mongo DB name to .env.local');
-}
-
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
-
-if (process.env.NODE_ENV === 'development') {
-  if (!global._mongoClientPromise) {
-    client = new MongoClient(uri);
-    global._mongoClientPromise = client.connect();
-  }
-  clientPromise = global._mongoClientPromise;
-} else {
-  client = new MongoClient(uri);
-  clientPromise = client.connect();
-}
-
-export async function POST(req: NextRequest) {
-  const { name, email, message } = await req.json();
-
-  if (!name || !email || !message) {
-    return NextResponse.json({ error: 'Name, email, and message are required' }, { status: 400 });
-  }
-
+export async function POST(request: Request) {
   try {
     const client = await clientPromise;
-    const db = client.db(dbName);
-    const collection = db.collection('messages');
+    const db = client.db("your-database-name"); // Change this to your actual database name
 
-    const result = await collection.insertOne({ name, email, message, createdAt: new Date() });
+    const { name, email, message } = await request.json();
 
-    return NextResponse.json({ message: 'Message received', result }, { status: 201 });
+    const collection = db.collection("messages");
+    await collection.insertOne({ name, email, message, createdAt: new Date() });
+
+    return NextResponse.json({ message: "Message sent successfully!" });
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    return NextResponse.json({ message: "Failed to send message." }, { status: 500 });
   }
 }

@@ -3,6 +3,7 @@ import { FormEvent, useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { signOut, useSession } from "next-auth/react";
 
 export default function Login() {
@@ -59,7 +60,7 @@ export default function Login() {
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex flex-col items-center">
             <span className="text-xl font-semibold">Accessible Learning Platform</span>
-            <span className="text-sm">Inclusive Learning: Bringing the World of Knowledge Within Everyone's Reach</span>
+            <span className="text-sm">Inclusive Learning: Bringing the World of Knowledge Within Everyone&#39;s Reach</span>
           </div>
           <div className="flex items-center">
             {showSession()}
@@ -102,7 +103,7 @@ export default function Login() {
               href="/register"
               className="text-sm text-[#888] transition duration-150 ease hover:text-black"
             >
-              Don't have an account?
+              Don&apos;t have an account?
             </Link>
           </form>
         </section>
@@ -110,7 +111,7 @@ export default function Login() {
       <footer className="w-full bg-gray-800 text-white py-4 mt-8">
       <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
         <div className="flex items-center mb-4 md:mb-0">
-          <img src="/logo.png" alt="Small Logo" className="w-14 h-14 mr-4" />
+          <Image src="/logo.png" alt="Small Logo" width={50} height={50} className="mr-4" />
           <div className="flex flex-col items-center">
             <span className="text-lg font-semibold">Your Company</span>
             <span className="text-sm">&copy; 2024 All Rights Reserved</span>
@@ -126,3 +127,4 @@ export default function Login() {
     </div>
   );
 }
+

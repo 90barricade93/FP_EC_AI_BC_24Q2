@@ -1,6 +1,7 @@
 "use client";
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -66,21 +67,27 @@ export default function Contact() {
       <header className="w-full bg-gray-800 text-white py-4 fixed top-0 z-10">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex flex-col items-center">
-            <span className="text-xl font-semibold">Accessible Learning Platform</span>
-            <span className="text-sm">Inclusive Learning: Bringing the World of Knowledge Within Everyone's Reach</span>
+            <span className="text-xl font-semibold">
+              Accessible Learning Platform
+            </span>
+            <span className="text-sm">
+              &quot;Inclusive Learning: Bringing the World of Knowledge Within
+              Everyone&apos;s Reach&quot;
+            </span>
           </div>
-          <div className="flex items-center">
-            {showSession()}
-          </div>
+          <div className="flex items-center">{showSession()}</div>
         </div>
       </header>
       <main className="flex flex-col items-center justify-center flex-grow mt-20 space-y-4">
         <h1 className="text-3xl font-bold">Contact Us</h1>
         <p className="text-lg max-w-prose text-center">
-          If you have any questions, feel free to reach out to us. We are here to help and support you in your learning journey.
+          If you have any questions, feel free to reach out to us. We are here to
+          help and support you in your learning journey.
         </p>
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
-          {feedback && <p className="text-center text-red-500">{feedback}</p>}
+          {feedback && (
+            <p className="text-center text-red-500">{feedback}</p>
+          )}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
               Name
@@ -136,19 +143,26 @@ export default function Contact() {
       <footer className="w-full bg-gray-800 text-white py-4 mt-8">
         <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
           <div className="flex items-center mb-4 md:mb-0">
-            <img src="/logo.png" alt="Small Logo" className="w-14 h-14 mr-4" />
+            <Image src="/logo.png" alt="Small Logo" width={48} height={48} className="mr-4" />
             <div className="flex flex-col items-center">
               <span className="text-lg font-semibold">Your Company</span>
               <span className="text-sm">&copy; 2024 All Rights Reserved</span>
             </div>
           </div>
           <div className="flex space-x-4">
-            <a href="/" className="text-sm hover:text-gray-400">Home</a>
-            <a href="/about" className="text-sm hover:text-gray-400">About</a>
-            <a href="/contact" className="text-sm hover:text-gray-400">Contact</a>
+            <a href="/" className="text-sm hover:text-gray-400">
+              Home
+            </a>
+            <a href="/about" className="text-sm hover:text-gray-400">
+              About
+            </a>
+            <a href="/contact" className="text-sm hover:text-gray-400">
+              Contact
+            </a>
           </div>
         </div>
       </footer>
     </div>
   );
 }
+

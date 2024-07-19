@@ -3,6 +3,7 @@ import { useSession, signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function ProfilePage() {
   const { data: session, status } = useSession();
@@ -48,7 +49,7 @@ export default function ProfilePage() {
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex flex-col items-center">
             <span className="text-xl font-semibold">Accessible Learning Platform</span>
-            <span className="text-sm">Inclusive Learning: Bringing the World of Knowledge Within Everyone's Reach</span>
+            <span className="text-sm">Inclusive Learning: Bringing the World of Knowledge Within Everyone&apos;s Reach</span>
           </div>
           <button
             className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -117,7 +118,7 @@ export default function ProfilePage() {
       <footer className="w-full bg-gray-800 text-white py-4 mt-8">
         <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
           <div className="flex items-center mb-4 md:mb-0">
-            <img src="/logo.png" alt="Small Logo" className="w-14 h-14 mr-4" />
+            <Image src="/logo.png" alt="Small Logo" className="w-14 h-14 mr-4" />
             <div className="flex flex-col items-center">
               <span className="text-lg font-semibold">Your Company</span>
               <span className="text-sm">&copy; 2024 All Rights Reserved</span>
@@ -133,3 +134,5 @@ export default function ProfilePage() {
     </div>
   );
 }
+
+

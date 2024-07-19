@@ -1,28 +1,25 @@
-"use server"
-import { connectDB } from "@/lib/mongodb";
+"use server";
+import connectDB from "@/lib/mongodb";
 import User from "@/models/User";
 import bcrypt from "bcryptjs";
 
-export const register = async (values: any) => {
-  const { email, password, name } = values;
+interface RegisterParams {
+  email: string;
+  password: string;
+  name: string;
+}
+
+export async function register({ email, password, name }: RegisterParams) {
+  await connectDB();
+
+  const hashedPassword = await bcrypt.hash(password, 10);
+  const newUser = new User({ email, password: hashedPassword, name });
 
   try {
-      await connectDB();
-      const userFound = await User.findOne({ email });
-      if(userFound){
-          return {
-              error: 'Email already exists!'
-          }
-      }
-      const hashedPassword = await bcrypt.hash(password, 10);
-      const user = new User({
-        name,
-        email,
-        password: hashedPassword,
-      });
-      await user.save();
-
-  }catch(e){
-      console.log(e);
+    await newUser.save();
+    return { message: 'User registered successfully' };
+  } catch (error) {
+    console.error('Error registering user:', error);
+    return { error: 'Error registering user' };
   }
 }
