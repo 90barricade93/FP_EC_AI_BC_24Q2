@@ -89,7 +89,7 @@ export default function Contact() {
             <p className="text-center text-red-500">{feedback}</p>
           )}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-200">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-500">
               Name
             </label>
             <input
@@ -103,7 +103,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-200">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-500">
               Email
             </label>
             <input
@@ -117,7 +117,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-200">
+            <label htmlFor="message" className="block text-sm font-medium text-gray-500">
               Message
             </label>
             <textarea

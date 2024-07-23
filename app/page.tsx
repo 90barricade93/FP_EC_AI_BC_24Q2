@@ -61,30 +61,14 @@ export default function Home() {
       </header>
       <main className="flex flex-col items-center justify-center flex-grow mt-20 space-y-4">
         <Image
-          src="/logo.png"
-          alt="Placeholder"
-          className="mb-4 w-[500px] h-[500px] object-cover"
+          src="/Logo.jpg"
+          alt="Group 9 app logo"
+          className="mb-4 w-[500px] h-[500px] object-cover rounded-lg"
           width={500}
           height={500}
+          style={{ backdropFilter: 'blur(10px)' }}
         />
-        <div className="flex justify-center space-x-4 w-full max-w-[600px]">
-          <a
-            href="https://github.com/your-github-username"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 text-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/your-linkedin-username"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 text-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-          >
-            LinkedIn
-          </a>
-        </div>
+        
       </main>
       <footer className="w-full bg-gray-800 text-white py-4 mt-8">
         <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">

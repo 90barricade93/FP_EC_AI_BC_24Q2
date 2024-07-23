@@ -59,24 +59,10 @@ export default function PersonalPage() {
       <main className="flex flex-col items-center justify-center flex-grow mt-20 space-y-4">
         <h1>Welcome, {session?.user?.name || "User"}</h1>
         <p>This is your personal page.</p>
-        <div className="flex justify-center space-x-4 w-full max-w-[600px]">
-          <a
-            href="https://github.com/your-github-username"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 text-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/your-linkedin-username"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 text-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-          >
-            LinkedIn
-          </a>
-        </div>
+        <p>From here the user can start the learning journey.</p>
+
+        {/* Add more content here as needed */}
+
       </main>
       <footer className="w-full bg-gray-800 text-white py-4 mt-8">
         <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
