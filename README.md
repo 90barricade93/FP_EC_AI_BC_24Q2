@@ -9,9 +9,7 @@
 
 </div>
 
-# FP_EC_AI_BC_24Q2-Painting Description Application
-
-Final Project - Encode Club AI BootCamp 24Q2 Repository
+# FP_EC_AI_BC_24Q2 - Final Project - Encode Club AI BootCamp 24Q2 Repository
 
 # SPEC-001: Accessible Learning Platform for the Visually Impaired
 
