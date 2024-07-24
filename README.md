@@ -70,7 +70,7 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 - **Message Storage:** Messages are saved to a MongoDB collection for further review.
 
 #### Personal Page
-- **Personalized Welcome:** Displays a personalized welcome message with the user's full name.
+- **Personalized Learning Page:** Displays a personalized welcome message with the user's full name.
 - **Navigation Links:** Provides links to the user's GitHub and LinkedIn profiles.
 - **Back Navigation:** Includes a button to navigate back to the personal page from the profile page.
 
@@ -92,25 +92,36 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 - **User Update API:** Allows users to update their profile information and saves changes to MongoDB.
 
 ## Technical Specifications
-- **Framework:** Next.js
-- **Styling:** Tailwind CSS
+- **Framework:** Next.js, Streamlit, Vercel
+- **Styling:** Tailwind CSS,
 - **Authentication:** next-auth
 - **Database:** MongoDB (Database: bootcamp24q2)
-- **Languages:** TypeScript for type-safe code
+- **Languages:** 
+```
+                     - TypeScript for type-safe code
+                     - Python for Streamlit, and interaction with LLMs
+```
 
+- **Libraries:**    
+```
+                     - OOBABOOGA/text-generation-webui for text-generation and RAG
+                     - AUTOMATIC1111/stable-diffusion-webui for image analysis
+```
+
+
+## Contributors
 ## Project Members Group 9
 
-- [Emmanuel](https://github.com/codehouze)
-- [Alessio](https://github.com/AlessioChen)
-- [Jan-Christoph](https://github.com/jcklie)
-- [Akash](https://github.com/kshntn)
-- [Serena](https://github.com/BreadFeet)
-- [Raymond](https://github.com/90barricade93/)
-imPS1a - @Serena Kim 
-7gxzzH - @Codehouze 
-S9fx1O - @Alessio
-mIOHa2 - @Abhi 
-sBF9oB - @Barricade 
+7gxzzH - [Emmanuel](https://github.com/codehouze) Codehouze
+imPS1a - [Serena](https://github.com/BreadFeet) Serena Kin
+// S9fx1O - [Alessio](https://github.com/AlessioChen) Alessio
+mIOHa2 - [Abhi](https://https://github.com/AbhishekT-2002) Abhi
+sBF9oB - [Raymond](https://github.com/90barricade93/) 90barricade93
+
+# Bootcamp Sponsors
+
+MongoDB Inc.
+
 
 ## Support
 If you have any questions or need assistance, please contact our support team at [support@accessiblelearningplatform.com](mailto:support@accessiblelearningplatform.com).
@@ -130,11 +141,7 @@ Feel free to contribute, suggest improvements, or ask questions. Happy coding!
 
 ### Acknowledgements
 
-We would like to thank the [Encode Club AI BootCamp](https://github.com/Encode-Club-AI-Bootcamp) for this opportunity and [@mpagani](https://github.com/MatheusDaros) for his guidance and the Sponsors for their workshops!
-
-### Sponsors
-
-
+We would like to thank the [Encode Club AI BootCamp](https://github.com/Encode-Club-AI-Bootcamp) for this opportunity, the [@mpagani](https://github.com/MatheusDaros) for his expertise and guidance and the Sponsors for their workshops!
 
 <div align="center">
 

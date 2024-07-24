@@ -13,7 +13,7 @@ export default function StreamlitEmbed() {
             {status === "authenticated" && (
                 <div className="flex items-center space-x-2">
                     <iframe
-                        src="https://30days.streamlit.app?embed=true"
+                        src="https://alfred-ai-app-app-crwmq4aabhq3lybuf7ujvo.streamlit.app/?embed=true"
                         style={{ height: '525px', width: '860px' }}
                     />
                 </div>
