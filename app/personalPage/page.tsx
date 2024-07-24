@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import navbar from '../navbar';
+import StreamlitEmbed from '../streamlitembed';
 
 export default function PersonalPage() {
   const { data: session } = useSession();
@@ -18,11 +19,11 @@ export default function PersonalPage() {
       <main className="flex flex-col items-center justify-center flex-grow mt-20 space-y-4">
         <h1>Welcome, {session?.user?.name || "User"}</h1>
         <p>This is your personal learning page.</p>
-        <div className="flex justify-center space-x-4 w-full max-w-[1200px]">
-          <div className="flex-1 w-[500px] h-[400px] rounded-md bg-gray-200 p-4 text-center">
-            <p className="text-3xl font-semibold">COMPONENT</p>
+        <div className="flex justify-center space-x-4 w-full max-w-[1800px]">
+          <div className="flex-1 w-[800px] h-[550px] rounded-md bg-gray-200 p-4 text-center">
+            <StreamlitEmbed />
           </div>
-          <div className="flex-1 w-[500px] h-[400px] rounded-md bg-gray-200 p-4 text-center">
+          <div className="flex-1 w-[800px] h-[550px] rounded-md bg-gray-200 p-4 text-center">
             <p className="text-3xl font-semibold">COMPONENT</p>
           </div>
         </div>
