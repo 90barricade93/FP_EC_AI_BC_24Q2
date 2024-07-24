@@ -126,23 +126,6 @@ export default function Register() {
           </form>
         </section>
         </main>
-      <footer className="w-full bg-gray-800 text-white py-4 mt-8">
-      <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
-        <div className="flex items-center mb-4 md:mb-0">
-          {/* Use Next.js Image component for optimized image loading */}
-          <Image src="/logo.png" alt="Small Logo" width={56} height={56} />
-          <div className="flex flex-col items-center">
-            <span className="text-lg font-semibold">Your Company</span>
-            <span className="text-sm">&copy; 2024 All Rights Reserved</span>
-          </div>
-        </div>
-        <div className="flex space-x-4">
-          <a href="/" className="text-sm hover:text-gray-400">Home</a>
-          <a href="/about" className="text-sm hover:text-gray-400">About</a>
-          <a href="/contact" className="text-sm hover:text-gray-400">Contact</a>
-        </div>
-      </div>
-    </footer>
     </div>
   );
 }
