@@ -109,19 +109,17 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 ```
 
 
-## Contributors (Project Members Group 9)
+## Contributors
+## Project Members Group 9
 
 7gxzzH - [Emmanuel](https://github.com/codehouze) Codehouze
-imPS1a - [Serena](https://github.com/BreadFeet) Serena Kin
-S9fx1O - [Alessio](https://github.com/AlessioChen) Alessio
-mIOHa2 - [Abhi](https://https://github.com/AbhishekT-2002) Abhi
+imPS1a - [Serena](https://github.com/BreadFeet) Serena Kim
+mIOHa2 - [Abhi](https://https://github.com/AbhishekT-2002) forgetabhi
 sBF9oB - [Raymond](https://github.com/90barricade93/) 90barricade93
 
+# Used Bootcamp Sponsors
 
-# Bootcamp Sponsors
-
-MongoDB Inc.
-
+- MongoDB Inc.
 
 ## Support
 If you have any questions or need assistance, please contact our support team at [support@accessiblelearningplatform.com](mailto:support@accessiblelearningplatform.com).
