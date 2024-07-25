@@ -109,14 +109,14 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 ```
 
 
-## Contributors
-## Project Members Group 9
+## Contributors (Project Members Group 9)
 
 7gxzzH - [Emmanuel](https://github.com/codehouze) Codehouze
 imPS1a - [Serena](https://github.com/BreadFeet) Serena Kin
-// S9fx1O - [Alessio](https://github.com/AlessioChen) Alessio
+S9fx1O - [Alessio](https://github.com/AlessioChen) Alessio
 mIOHa2 - [Abhi](https://https://github.com/AbhishekT-2002) Abhi
 sBF9oB - [Raymond](https://github.com/90barricade93/) 90barricade93
+
 
 # Bootcamp Sponsors
 
