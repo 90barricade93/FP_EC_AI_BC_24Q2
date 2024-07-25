@@ -1,3 +1,16 @@
+<div align="center">
+<img src="GROUP 9.png" height="100">
+</div>
+<div align="center">
+
+[![Latest Release](https://img.shields.io/badge/Latest%20Version-0.0.0-blue?logo=github)](https://github.com/90barricade93/FP_EC_AI_BC_24Q2/commits/main)
+![Static Badge](https://img.shields.io/badge/Encode_Club-AI_Bootcamp_24Q2-silver)
+![Static Badge](https://img.shields.io/badge/GROUP-09-gold)
+
+</div>
+
+# FP_EC_AI_BC_24Q2 - Final Project - Encode Club AI BootCamp 24Q2 Repository
+
 # SPEC-001: Accessible Learning Platform for the Visually Impaired
 
 ## Background
@@ -57,7 +70,7 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 - **Message Storage:** Messages are saved to a MongoDB collection for further review.
 
 #### Personal Page
-- **Personalized Welcome:** Displays a personalized welcome message with the user's full name.
+- **Personalized Learning Page:** Displays a personalized welcome message with the user's full name.
 - **Navigation Links:** Provides links to the user's GitHub and LinkedIn profiles.
 - **Back Navigation:** Includes a button to navigate back to the personal page from the profile page.
 
@@ -79,14 +92,34 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 - **User Update API:** Allows users to update their profile information and saves changes to MongoDB.
 
 ## Technical Specifications
-- **Framework:** Next.js
-- **Styling:** Tailwind CSS
+- **Framework:** Next.js, Streamlit, Vercel
+- **Styling:** Tailwind CSS,
 - **Authentication:** next-auth
 - **Database:** MongoDB (Database: bootcamp24q2)
-- **Languages:** TypeScript for type-safe code
+- **Languages:** 
+```
+                     - TypeScript for type-safe code
+                     - Python for Streamlit, and interaction with LLMs
+```
 
-## Team
+- **Libraries:**    
+```
+                     - OOBABOOGA/text-generation-webui for text-generation and RAG
+                     - AUTOMATIC1111/stable-diffusion-webui for image analysis
+```
 
+
+## Contributors
+## Project Members Group 9
+
+7gxzzH - [Emmanuel](https://github.com/codehouze) Codehouze
+imPS1a - [Serena](https://github.com/BreadFeet) Serena Kim
+mIOHa2 - [Abhi](https://https://github.com/AbhishekT-2002) forgetabhi
+sBF9oB - [Raymond](https://github.com/90barricade93/) 90barricade93
+
+# Used Bootcamp Sponsors
+
+- MongoDB Inc.
 
 ## Support
 If you have any questions or need assistance, please contact our support team at [support@accessiblelearningplatform.com](mailto:support@accessiblelearningplatform.com).
@@ -96,3 +129,23 @@ Your feedback is valuable to us. Please share your experience and suggestions to
 
 ## License
 This project is licensed under the MIT License.
+
+## Conclusion
+
+This project demonstrates ....
+
+
+Feel free to contribute, suggest improvements, or ask questions. Happy coding!
+
+### Acknowledgements
+
+We would like to thank the [Encode Club AI BootCamp](https://github.com/Encode-Club-AI-Bootcamp) for this opportunity, the [@mpagani](https://github.com/MatheusDaros) for his expertise and guidance and the Sponsors for their workshops!
+
+<div align="center">
+
+![GitHub forks](https://img.shields.io/github/forks/90barricade93/FP_EC_AI_BC_24Q2) &ensp; © GROUP 9 - AI 24Q2 &ensp; ![GitHub stars](https://img.shields.io/github/stars/90barricade93/FP_EC_AI_BC_24Q2)
+
+</div>
+
+---
+
