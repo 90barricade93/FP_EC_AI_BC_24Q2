@@ -88,8 +88,7 @@ export default function RootLayout({
     <html lang="en" style={{ userSelect: "none" }}>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Provider>
-          <Header />
-          <div className="flex-grow flex flex-col">
+           <div className="flex-grow flex flex-col">
             <main className="flex-grow">
               {isVoiceSelectorVisible && (
                 <VoiceSelector
@@ -100,7 +99,6 @@ export default function RootLayout({
               {children}
             </main>
           </div>
-          <Footer />
         </Provider>
       </body>
     </html>
