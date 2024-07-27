@@ -7,6 +7,7 @@ import { useEffect } from "react";
 
 import Header from "./header";
 import Footer from "./footer";
+import VoiceSelector from "./VoiceSelector";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,9 @@ export default function RootLayout({
           <Header />
           <div className="flex-grow flex flex-col">
             <main className="flex-grow">
+              <div className="flex-grow flex flex-col">
+                <VoiceSelector />
+              </div>
               {children}
             </main>
           </div>
