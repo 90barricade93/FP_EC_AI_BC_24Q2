@@ -163,7 +163,7 @@ We would like to thank the [Encode Club AI BootCamp](https://github.com/Encode-C
 
 <div align="center">
 
-![GitHub forks](https://img.shields.io/github/forks/90barricade93/FP_EC_AI_BC_24Q2) &ensp; © GROUP 9 - AI 24Q2 &ensp; ![GitHub stars](https://img.shields.io/github/stars/90barricade93/FP_EC_AI_BC_24Q2)
+![GitHub forks](https://img.shields.io/github/forks/90barricade93/FP_EC_AI_BC_24Q2) &ensp; © GROUP 9 - AI 24Q2 &ensp; ![GitHub stars](https://img.shields.io/github/stars/90barricade93/FP_EC_AI_BC_24Q2) .
 
 </div>
 
