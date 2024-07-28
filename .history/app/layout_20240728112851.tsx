@@ -2,7 +2,7 @@
 import { Inter } from "next/font/google";
 import { useEffect } from "react";
 import { Provider } from "../components/provider";
-import '../app/styles/globals.css';
+import '../'
 
 import Footer from "../components/ui/Footer";
 import Header from "../components/ui/Header";
