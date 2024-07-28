@@ -1,12 +1,12 @@
 "use client";
 import { Inter } from "next/font/google";
 import { useEffect } from "react";
-import { Provider } from "../components/provider";
 import "./globals.css";
+import { Provider } from "./provider";
 
-import Footer from "../components/ui/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/ui/Header";
-import VoiceSelector from "../components/VoiceSelector";
+import VoiceSelector from "./VoiceSelector";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
           <div className="flex-grow flex flex-col">
             <main className="flex-grow">
               <div className="flex-grow flex flex-col">
-                <VoiceSelector children={undefined} />
+                <VoiceSelector />
               </div>
               {children}
             </main>

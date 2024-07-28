@@ -1,12 +1,12 @@
 "use client";
 import { Inter } from "next/font/google";
 import { useEffect } from "react";
-import { Provider } from "../components/provider";
 import "./globals.css";
+import { Provider } from "./provider";
 
 import Footer from "../components/ui/Footer";
 import Header from "../components/ui/Header";
-import VoiceSelector from "../components/VoiceSelector";
+import VoiceSelector from "./VoiceSelector";
 
 const inter = Inter({ subsets: ["latin"] });
 

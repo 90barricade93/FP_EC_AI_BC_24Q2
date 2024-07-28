@@ -6,7 +6,7 @@ import "./globals.css";
 
 import Footer from "../components/ui/Footer";
 import Header from "../components/ui/Header";
-import VoiceSelector from "../components/VoiceSelector";
+import VoiceSelector from "./VoiceSelector";
 
 const inter = Inter({ subsets: ["latin"] });
 
