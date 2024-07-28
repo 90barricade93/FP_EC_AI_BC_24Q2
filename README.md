@@ -127,7 +127,7 @@ If you are interested in contributing, please assign yourself to the issue or le
 Thank you for your interest in contributing to this project!
 
 
-## Project Members Group 9
+## Project Members Group 9 (this section will be removed in 2 weeks)
 
 7gxzzH - [Emmanuel](https://github.com/codehouze) Codehouze
 
@@ -142,7 +142,7 @@ sBF9oB - [Raymond](https://github.com/90barricade93/) 90barricade93
 - MongoDB Inc.
 
 ## Support
-If you have any questions or need assistance, please contact our support team at [support@accessiblelearningplatform.com](mailto:support@accessiblelearningplatform.com).
+If you have any questions or need assistance, please contact our support team at [support@accessiblelearningplatform.com](mailto:fake@fake.com).
 
 ## Feedback
 Your feedback is valuable to us. Please share your experience and suggestions to help us improve the platform.
