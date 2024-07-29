@@ -2,10 +2,7 @@
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-
-
-import StreamlitEmbed from '../streamlitembed';
-
+import StreamlitEmbed from '../../components/streamlitembed';
 
 export default function PersonalPage() {
   const { data: session } = useSession();

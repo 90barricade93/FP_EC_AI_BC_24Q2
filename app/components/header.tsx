@@ -12,7 +12,7 @@ const Header = () => {
     if (status === "authenticated") {
       return (
         <div className="flex items-center space-x-2">
-          <Link href="/profile" className="text-white">{session?.user?.name || "Profile"}</Link>
+          <Link href="/pages/profile" className="text-white">{session?.user?.name || "Profile"}</Link>
           <button
             className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             onClick={() => {
@@ -30,7 +30,7 @@ const Header = () => {
     } else {
       return (
         <Link
-          href="/login"
+          href="/pages/login"
           className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
         >
           Sign In

@@ -39,7 +39,7 @@ export default function ProfilePage() {
   }
 
   if (status === "unauthenticated") {
-    router.push('/login');
+    router.push('/pages/login');
     return null;
   }
 
@@ -53,7 +53,7 @@ export default function ProfilePage() {
           </div>
           <button
             className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-            onClick={() => router.push("/personalPage")}
+            onClick={() => router.push("/pages/personalPage")}
           >
             Back to Personal Page
           </button>
