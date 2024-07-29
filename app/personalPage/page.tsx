@@ -1,12 +1,11 @@
 'use client';
 import { useSession } from 'next-auth/react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+
 
 import StreamlitEmbed from '../streamlitembed';
-import VoiceSelector from '..VoiceSelector';
+
 
 export default function PersonalPage() {
   const { data: session } = useSession();
