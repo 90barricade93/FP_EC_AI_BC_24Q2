@@ -3,20 +3,9 @@
 import { useEffect, useState } from "react";
 
 export default function About() {
-  const [textContent, setTextContent] = useState("");
+  
 
-  useEffect(() => {
-    const text = `Welcome to the Accessible Learning Platform. Our mission is to make learning accessible to everyone, regardless of their circumstances. We believe that education is a fundamental right, and we strive to provide resources and tools that cater to all learners.`;
-    console.log('Extracted text content:', text); // Verify text extraction
-    setTextContent(text);
-
-    // Invoke the TextToSpeech function with the extracted text
-    if (text) {
-      const utterance = new SpeechSynthesisUtterance(text);
-      console.log('Speaking text:', text);
-      window.speechSynthesis.speak(utterance);
-    }
-  }, []);
+  const text = `Welcome to the Accessible Learning Platform. Our mission is to make learning accessible to everyone, regardless of their circumstances. We believe that education is a fundamental right, and we strive to provide resources and tools that cater to all learners.`;
 
   return (
     <div className="relative min-h-screen flex flex-col">
@@ -28,7 +17,13 @@ export default function About() {
           education is a fundamental right, and we strive to provide resources and tools
           that cater to all learners.
         </p>
+        {/* <VoiceSelector
+          onSelectVoice={setSelectedVoice}
+          onClose={() => setShowVoiceSelector(false)}
+        /> */}
+        {/* <button onClick={() => setSelectedVoice(null)}>Say</button> */}
       </main>
     </div>
   );
 }
+
