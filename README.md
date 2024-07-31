@@ -11,9 +11,35 @@
 
 # FP_EC_AI_BC_24Q2 - Final Project - Encode Club AI BootCamp 24Q2 Repository
 
-# SPEC-001: Accessible Learning Platform for the Visually Impaired
+## Repository Background Information
 
-## Background
+### AI Bootcamp
+By Encode Club and Venture Miner (June 10th - July 25th 2024)
+
+This repository contains the final project from the AI Bootcamp, a 6-week long program designed to introduce students to the best techniques for creating Artificial Intelligence applications. The bootcamp was hands-on and project-based, focusing on the practical applications of AI technology across various industries. Students learned to use the latest generative AI models and tools to build applications capable of understanding and generating texts, images, and other types of content.
+
+### Curriculum Overview
+
+- **Week 1:**- Machine Learning intro- Intro to transformers and GPTs- Using OpenAI APIs- Model configurations- Introduction to prompt engineering
+
+- **Week 2:**- Building a simple chat app with React and Vercel- Generating frontend with AI- Running LLMs on personal hardware- Text generation WebUI and prompt techniques- Building an AI joke generator
+
+- **Week 3:**- Deep dive on GPTs- Model training and fine-tuning- Using Assistants and RAG- Exploring other models- Generating images with AI and intro to stable diffusion
+
+- **Week 4:**- Running diffusion models on personal hardware- Image generation WebUI and prompt techniques- Control meshes and fine-tuning- Image processing and computer vision intro- Using computer vision models
+
+- **Week 5:**- Workshops week with guest lectures and exclusive workshops covering the latest research and practical applications in AI.
+
+- **Week 6:**- Projects week dedicated to building a group project using the concepts learned throughout the bootcamp.
+
+### Project Continuation
+
+Now that the bootcamp is over, we have decided to continue development on our final project. Initially a quick prototype, we are now building a Python backend to handle all AI features while maintaining the Next.js UI for the frontend. 
+
+We still need to plan, discuss, and experiment with both the backend and the UI to enhance the functionality and user experience. As it stands, all content is currently a placeholder.
+
+## Application Background
+# SPEC-001: Accessible Learning Platform for the Visually Impaired
 The traditional educational content relies heavily on visual elements, which are challenging for visually impaired individuals. This platform aims to provide essential accessibility features to make educational content more inclusive using CV and RAG technologies.
 
 ## Requirements
@@ -112,17 +138,7 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 
 We welcome contributions to this project! Before you start, please introduce yourself in our Discord server: [https://discord.gg/NBaC49M5](https://discord.gg/NBaC49M5).
 
-Here are the steps to contribute:
-
-1. Fork or clone the repository.
-2. Create a new branch for each feature or issue you are working on.
-3. Make your changes and commit them.
-4. Push your changes to your forked repository.
-5. Submit a pull request to the `development` branch.
-
-Please note that the `main` branch is reserved for stable deployments and is connected to Vercel deployment. We recommend using the `development` branch for collaborative development.
-
-If you are interested in contributing, please assign yourself to the issue or leave it open for someone else to work on. We encourage you to report in the "Repository Channel" whenever you add or finish issues, your intentions, or any repository-related matters.
+Please check out our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
 
 Thank you for your interest in contributing to this project!
 
