@@ -24,8 +24,8 @@ const Footer = () => {
           </div>
           <div className="flex space-x-4">
             <Link href="/personalPage" className="text-sm hover:text-gray-400">Home</Link>
-            <Link href="/about" className="text-sm hover:text-gray-400">About</Link>
-            <Link href="/contact" className="text-sm hover:text-gray-400">Contact</Link>
+            <a href="/pages/about" className="text-sm hover:text-gray-400">About</a>
+              <a href="/pages/contact" className="text-sm hover:text-gray-400">Contact</a>
           </div>
         </div>
       </footer>
