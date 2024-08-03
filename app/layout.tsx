@@ -1,13 +1,9 @@
-"use client";
-import type { Metadata } from "next";
-import { Provider } from "./provider";
+'use client';
+import { Provider } from "../lib/provider";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { useEffect } from "react";
-
-import Header from "./header";
-import Footer from "./footer";
-import VoiceSelector from "./VoiceSelector";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,24 +12,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {
-    const text = document.body.innerText || document.body.textContent;
-    if (text) {
-      const utterance = new SpeechSynthesisUtterance(text);
-      window.speechSynthesis.speak(utterance);
-    }
-  }, []);
-
   return (
-    <html lang="en" style={{ userSelect: "none" }}>
+    <html lang="en">
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Provider>
           <Header />
           <div className="flex-grow flex flex-col">
             <main className="flex-grow">
-              <div className="flex-grow flex flex-col">
-                <VoiceSelector />
-              </div>
               {children}
             </main>
           </div>

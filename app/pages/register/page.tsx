@@ -22,7 +22,7 @@ export default function Register() {
       setError(r.error);
       return;
     } else {
-      return router.push("/login");
+      return router.push("/pages/login");
     }
   };
 
@@ -47,7 +47,7 @@ export default function Register() {
     } else {
       return (
         <Link
-          href="/login"
+          href="/pages/login"
           className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
         >
           Sign In
@@ -118,7 +118,7 @@ export default function Register() {
             </button>
 
             <Link
-              href="/login"
+              href="/pages/login"
               className="text-sm text-[#888] transition duration-150 ease hover:text-black"
             >
               Already have an account?

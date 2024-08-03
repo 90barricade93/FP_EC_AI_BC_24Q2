@@ -19,7 +19,7 @@ export default function Login() {
       setError(res.error as string);
     }
     if (res?.ok) {
-      return router.push("/personalPage");
+      return router.push("/pages/personalPage");
     }
   };
 
@@ -59,7 +59,7 @@ export default function Login() {
               Sign In
             </button>
             <Link
-              href="/register"
+              href="./register"
               className="text-sm text-[#888] transition duration-150 ease hover:text-black"
             >
               Don&apos;t have an account?
