@@ -136,7 +136,7 @@ We'll use Vercel's Next.js for the front end, our own LLMs for text and voice, a
 
 ## Contributing to the Project
 
-We welcome contributions to this project! Before you start, please introduce yourself in our Discord server: [https://discord.gg/NBaC49M5](https://discord.gg/NBaC49M5).
+We welcome contributions to this project! Before you start, please introduce yourself in our Discord server: [https://discord.gg/NBaC49M5]([https://discord.com/invite/BtxSyMJE]).
 
 Please check out our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
 
